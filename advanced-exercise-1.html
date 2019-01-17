@@ -5,6 +5,8 @@
 </head>
 <body>
 	<p id="addsum"></p>
+	<p id="multiplysum"></p>
+	<b><p id="totalsum"></p></b>
 	<script>
 		var a=7;
 		var b=14;
@@ -15,6 +17,21 @@
 		var sum1 = a+b+c+d+e;
 
 		document.getElementById("addsum").innerHTML = "The First Number Is: "+sum1;
+
+		var f=Number('1');
+		var g=15;
+		var h=8;
+		var i=Number("1");
+
+		var sum2 = f*g*h*i;
+
+		document.getElementById("multiplysum").innerHTML ="The Second Number Is: "+sum2;
+
+		var endsum = sum1/sum2;
+
+		document.getElementById("totalsum").innerHTML ="The End Sum Is: "+endsum;
+
+
 
 
 
