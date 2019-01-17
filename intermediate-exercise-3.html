@@ -4,6 +4,7 @@
 	<title></title>
 </head>
 <body>
+	<p id="try"></p>
 	<script>
 		var fruits = "mango/cherries/kiwi/grapes/pear/peach/orange/lemon";
 
@@ -11,12 +12,17 @@
 
 		temp = fruits.split('/');
 
-
-		for (i=0; i < temp.length; i++){
-			document.write(temp[i] + "<br>");
-		}
+		var x = document.getElementById("try");
+		x.innerHTML = temp.join("<br>");
+		
+		// for (i=0; i < temp.length; i++){
+		// 	document.write(temp[i] + "<br>");
+		// }
 
 		/*document.write(temp[0] + "<br>" + temp[1] + "<br>" + temp[2] + "<br>" + temp[3] + "<br>" + temp[4] + "<br>" + temp[5] + "<br>" + temp[6] + "<br>" + temp[7]);*/
+
+		
+
 	</script>
 </body>
 </html>
